@@ -1,0 +1,19 @@
+{
+  "name": "stackgl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify src/index.js -d --s main -u crypto > build/main.js",
+    "build-prod": "browserify src/index.js --s main -u crypto | uglifyjs > build/main.js"
+  },
+  "author": "Kevin Chapelier <kevin.chapelier@gmail.com> (http://www.kchapelier.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "gl-buffer": "^2.1.2",
+    "gl-shader": "^4.1.0",
+    "gl-vao": "^1.2.1",
+    "touches": "^1.2.0",
+    "webgl-context": "^2.2.0"
+  }
+}
